@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mod description="Makes text boxes in adventures larger. Recommended for adventures that use longer text strings." displayName="LargerAdventureTextBoxes" dllsBuild="$SPOREMOD_DLLS_BUILD" hasCustomInstaller="false" installerSystemVersion="1.0.1.2" isExperimental="$SPOREMOD_EXPERIMENTAL" unique="Lisko-LargerAdventureTextBoxes">
+  <prerequisite game="GalacticAdventures">LargerAdventureTextBoxes.package</prerequisite>
+</mod>

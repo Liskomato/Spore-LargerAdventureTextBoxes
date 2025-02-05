@@ -1,3 +1,5 @@
 names
 layouts_atlas~	0x40464200
+SpeechBubble
+ExpansionPack1
 sporemaster

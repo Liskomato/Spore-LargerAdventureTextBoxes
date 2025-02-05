@@ -29,13 +29,19 @@ void ChatterBubbleWidener::Update() {
 		IWindowPtr window = WindowManager.GetMainWindow()->FindWindowByID(0x073926F8);
 		Math::Rectangle rect = window->GetRealArea();
 		rect.x2 = rect.x1 + 294;
-
+		
 		window->SetLayoutArea(rect);
 		
 		if (window->FindWindowByID(0x07392DD8) != nullptr) {
 			ITextPtr text = object_cast<IText>(window->FindWindowByID(0x07392DD8));
 			Math::Rectangle rect2 = text->GetTextBounds(true,true);
-			if (rect2.GetHeight() > 41) {
+			
+			if (rect2.GetHeight() > 250) {
+				rect.x2 = rect.x1 + 390;
+				rect.y2 = rect.y1 + rect2.GetHeight() - 50;
+			}
+			else if (rect2.GetHeight() > 41) {
+				rect.x2 = rect.x1 + 294;
 				rect.y2 = rect.y1 + rect2.GetHeight();
 			}
 			else {

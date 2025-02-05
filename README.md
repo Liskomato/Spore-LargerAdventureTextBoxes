@@ -1,2 +1,2 @@
-# LargerAdventureTextBoxes
-You can download the mod in the Releases page.
+# Larger Adventure Text Boxes
+**You can download the mod in the *Releases* page.**

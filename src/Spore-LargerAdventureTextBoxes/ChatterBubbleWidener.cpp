@@ -32,12 +32,6 @@ void ChatterBubbleWidener::Update() {
 				Math::Rectangle rect = window->GetRealArea();
 				rect.x2 = rect.x1 + 294;
 
-				if (rect.x1 >= 20000 && rect.y1 >= 20000) {
-					rect.x1 -= 20000;
-					rect.x2 -= 20000;
-					rect.y1 -= 20000;
-					rect.y2 -= 20000;
-				}
 
 				window->SetLayoutArea(rect);
 
